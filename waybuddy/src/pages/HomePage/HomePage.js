@@ -4,31 +4,17 @@ import React, { useState } from 'react';
 import './HomePage.css';
 
 const HomePage = () => {
-    const [start, setStart] = useState('');
-    const [end, setEnd] = useState('');
-
-    const handleFetchOptions = () => {
-        // Here you would fetch the transport options based on start and end points
-        console.log(`Fetching transport options from ${start} to ${end}`);
-    };
 
     return (
-        <div>
-            <h2>Find Your Route</h2>
-            <input
-                type="text"
-                value={start}
-                onChange={(e) => setStart(e.target.value)}
-                placeholder="Starting Point"
-            />
-            <input
-                type="text"
-                value={end}
-                onChange={(e) => setEnd(e.target.value)}
-                placeholder="Destination"
-            />
-            <button onClick={handleFetchOptions}>Get Transport Options</button>
-        </div>
+        <section className="hero">
+            <div className="hero-container">
+                <h1>Serving you</h1>
+                <h1>Your</h1>
+                <h1>Destiny.</h1>
+                <p>yaha par kuch bhi text dal denge backchodi ka liya</p>
+                <button className="btn">Guide Me Home</button>
+            </div>
+        </section>
     );
 };
 

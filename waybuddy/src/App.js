@@ -6,11 +6,9 @@ import HomePage from './pages/HomePage/HomePage';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
-      <main>
-        <HomePage />
-      </main>
+      <HomePage />
     </div>
   );
 }
