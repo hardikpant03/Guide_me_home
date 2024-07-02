@@ -9,6 +9,7 @@ import Contribute from './pages/Contribute/contribute';
 const App = () => {
   return (
     <div>
+      <Router>
       <Router> 
         <Routes>
           <Route exact path="/" element={<Homepage />} />

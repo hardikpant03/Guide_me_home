@@ -13,6 +13,7 @@ const Header = () => {
                     <span>ACME</span>
                 </div>
                 <ul className="navbar-menu">
+                    <li className="navbar-item">
                 <li className="navbar-item">
                         <Link className="bar" to="/">Home</Link>
                     </li>
@@ -30,6 +31,7 @@ const Header = () => {
                     </li>
                 </ul>
                 {/* <div className="navbar-cart"> */}
+                {/* <a href="#"><i className="fas fa-shopping-cart"></i><span>3</span></a> */}
                     {/* <a href="#"><i className="fas fa-shopping-cart"></i><span>3</span></a> */}
                 {/* </div> */}
             </div>
