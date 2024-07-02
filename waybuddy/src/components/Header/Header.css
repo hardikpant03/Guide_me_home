@@ -46,6 +46,13 @@
   color: rgb(176, 6, 136);
 }
 .navbar-item .bar:hover {
+  font-size:21px;
+  margin: 0 30px;
+}
+.navbar-item .bar:active{
+  color: rgb(176, 6, 136);
+}
+.navbar-item .bar:hover{
   color: rgb(0, 0, 0);
 }
 

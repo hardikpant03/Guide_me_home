@@ -10,6 +10,7 @@ const App = () => {
   return (
     <div>
       <Router>
+      <Router> 
         <Routes>
           <Route exact path="/" element={<Homepage />} />
           <Route path="/contribute" element={<Contribute />} />
