@@ -1,11 +1,10 @@
-// src/pages/HomePage.js
-
-import React, { useState } from 'react';
+import React from 'react';
 import './HomePage.css';
-
+import Header from '../../components/Header/Header';
 const HomePage = () => {
-
     return (
+        <>
+        <Header />
         <section className="hero">
             <div className="hero-container">
                 <h1>Serving you</h1>
@@ -15,6 +14,7 @@ const HomePage = () => {
                 <button className="btn">Guide Me Home</button>
             </div>
         </section>
+        </>
     );
 };
 
