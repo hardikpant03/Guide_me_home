@@ -1,79 +1,97 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
 .navbar {
-  background-color: #ff5733;
-  padding: 20px;
   display: flex;
-  align-items: center;
+  position: relative;
   justify-content: space-between;
+  align-items: center;
+  background-color: #d3635a;
+  padding: 10px 20px;
+}
+
+.nav-logo img {
+  margin-left: 4rem;
+  height: 60px; 
+}
+
+.nav-items {
+  display: flex;
+  gap: 40px;
+}
+
+.check {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-items .check:hover {
+  background-color: #b04b45;
+  border-radius: 2px;
+  padding: 5px 5px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Sidebar styles */
+.side {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.sidebar {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 98%;
-  z-index: 10;
-}
-
-.navbar-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  right: -100%;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.navbar-brand {
+  height: 100%;
+  background-color: #d3635a;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+  transition: right 0.3s;
+  z-index: 1000; /* Ensure it covers other elements */
 }
 
-.navbar-brand img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
+.sidebar .close-btn {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  text-align: right;
+  padding: 10px 20px;
 }
 
-.navbar-menu {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin-left: 30%;
+.sidebar .side {
+  text-align: center;
+  padding: 10px 20px;
 }
 
-.navbar-item {
-  font-size:21px;
-  margin: 0 30px;
-}
-.navbar-item .bar:active{
-  color: rgb(176, 6, 136);
-}
-.navbar-item .bar:hover{
-  color: rgb(0, 0, 0);
+.sidebar .side:hover {
+  background-color: #b04b45;
 }
 
-.navbar-item .bar {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+.sidebar.open {
+  right: 0;
 }
 
-.navbar-cart {
-  display: flex;
-  align-items: center;
-}
+/* Responsive styles */
+@media (max-width: 1500px) {
+  .nav-items {
+    display: none;
+  }
 
-.navbar-cart .bar {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  position: relative;
-}
-
-.navbar-cart .bar span {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  background-color: #f00;
-  color: white;
-  border-radius: 50%;
-  padding: 3px 6px;
-  font-size: 12px;
+  .hamburger {
+    display: block;
+  }
 }
