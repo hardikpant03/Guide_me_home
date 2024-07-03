@@ -1,158 +1,96 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
 .navbar {
-  background-color: #eb5757;
-  padding: 17px;
-  margin-right: 2px;
   display: flex;
-  align-items: center;
+  position: relative;
   justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  margin-top: none;
-}
-.navbar-container {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1500px;
-  margin: 0 auto;
+  background-color: #d3635a;
+  padding: 10px 20px;
 }
 
-.navbar-brand {
-  align-items: left;
+.nav-logo img {
+  margin-left: 4rem;
+  height: 60px;
 }
 
-.navbar-brand img {
-  width: 200px;
-  height: 100px;
-  position: center;
-}
-
-.navbar-menu {
+.nav-items {
   display: flex;
-  list-style: none;
-  padding: 0px;
-  margin-left: 30%;
-  margin-top: 35px;
+  gap: 40px;
+}
+
+.check {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
 }
 
 .navbar-item {
   font-size: 21px;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin: 0 30px;
 }
 
-.navbar-item .bar:active {
-  color: rgb(176, 6, 136);
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
 }
 
-.navbar-item .bar:hover {
-  color: rgb(0, 0, 0);
-}
-
-.navbar-item .bar {
-  font-family: "sen", sans-serif;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 1.5;
-  text-align: left;
-  font-style: "regular";
+/* Sidebar styles */
+.side {
+  color: #fff;
   text-decoration: none;
-  color: #f9f9f9;
+  font-size: 18px;
+  padding: 10px;
 }
 
-.navbar-cart {
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #d3635a;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+  transition: right 0.3s;
+  z-index: 1000; /* Ensure it covers other elements */
 }
 
-.navbar-cart .bar {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  position: relative;
+.sidebar .close-btn {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  text-align: right;
+  padding: 10px 20px;
 }
 
-.navbar-cart .bar span {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  background-color: #eb5757;
-  color: white;
-  border-radius: 50%;
-  padding: 3px 6px;
-  font-size: 12px;
+.sidebar .side {
+  text-align: center;
+  padding: 10px 20px;
 }
 
-/* Media Queries */
-
-/* For screens smaller than 1200px */
-@media (max-width: 1550px) {
-  .navbar-brand img {
-    width: 150px;
-    height: 75px;
-    margin-left: 150%;
-  }
-  .navbar-menu {
-    margin-left: 20%;
-  }
-  .navbar-item {
-    font-size: 18px;
-    margin: 0 2px;
-  }
+.sidebar .side:hover {
+  background-color: #b04b45;
 }
 
-/* For screens smaller than 992px */
-@media (max-width: 992px) {
-  .navbar-brand img {
-    width: 100px;
-    height: 50px;
-    margin-left: 70%;
-  }
-  .navbar-menu {
-    margin-left: 15%;
-  }
-  .navbar-item {
-    font-size: 15px;
-    margin: 0 15px;
-  }
+.sidebar.open {
+  right: 0;
 }
 
-/* For screens smaller than 768px */
-@media (max-width: 768px) {
-  .navbar-brand img {
-    width: 80px;
-    height: 40px;
-    margin-left: 10%;
+/* Responsive styles */
+@media (max-width: 1500px) {
+  .nav-items {
+    display: none;
   }
-  .navbar-menu {
-    margin-left: 10%;
-  }
-  .navbar-item {
-    font-size: 12px;
-    margin: 0 0px;
-  }
-}
 
-/* For screens smaller than 480px */
-@media (max-width: 480px) {
-  .navbar-brand img {
-    width: 60px;
-    height: 30px;
-    margin-left: 5%;
-  }
-  .navbar-menu {
-    margin-left: 5%;
-  }
-  .navbar-item {
-    font-size: 10px;
-    margin: 0 5px;
-  }
-  .navbar-cart .bar span {
-    font-size: 10px;
-    padding: 2px 4px;
+  .hamburger {
+    display: block;
   }
 }
