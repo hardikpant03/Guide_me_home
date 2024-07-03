@@ -1,58 +1,67 @@
 .navbar {
-  background-color: #ff5733;
-  padding: 20px;
+  background-color: #eb5757;
+  padding: 17px;
+  margin-right: 2px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
-  width: 98%;
+  width: 100%;
   z-index: 10;
+  margin-top: none;
 }
-
 .navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
 .navbar-brand {
-  display: flex;
-  align-items: center;
+  align-items: left;
 }
 
 .navbar-brand img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
+  width: 200px;
+  height: 100px;
+  position: center;
 }
 
 .navbar-menu {
   display: flex;
   list-style: none;
-  padding: 0;
+  padding: 0px;
   margin-left: 30%;
+  margin-top: 35px;
 }
 
 .navbar-item {
   font-size: 21px;
-  margin: 0 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
+
 .navbar-item .bar:active {
   color: rgb(176, 6, 136);
 }
+
 .navbar-item .bar:hover {
   color: rgb(0, 0, 0);
 }
 
 .navbar-item .bar {
-  color: white;
+  font-family: "sen", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.5;
+  text-align: left;
+  font-style: "regular";
   text-decoration: none;
-  font-weight: bold;
+  color: #f9f9f9;
 }
 
 .navbar-cart {
@@ -71,9 +80,79 @@
   position: absolute;
   top: -5px;
   right: -5px;
-  background-color: #f00;
+  background-color: #eb5757;
   color: white;
   border-radius: 50%;
   padding: 3px 6px;
   font-size: 12px;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 1200px */
+@media (max-width: 1550px) {
+  .navbar-brand img {
+    width: 150px;
+    height: 75px;
+    margin-left: 150%;
+  }
+  .navbar-menu {
+    margin-left: 20%;
+  }
+  .navbar-item {
+    font-size: 18px;
+    margin: 0 2px;
+  }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+  .navbar-brand img {
+    width: 100px;
+    height: 50px;
+    margin-left: 70%;
+  }
+  .navbar-menu {
+    margin-left: 15%;
+  }
+  .navbar-item {
+    font-size: 15px;
+    margin: 0 15px;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 80px;
+    height: 40px;
+    margin-left: 10%;
+  }
+  .navbar-menu {
+    margin-left: 10%;
+  }
+  .navbar-item {
+    font-size: 12px;
+    margin: 0 0px;
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .navbar-brand img {
+    width: 60px;
+    height: 30px;
+    margin-left: 5%;
+  }
+  .navbar-menu {
+    margin-left: 5%;
+  }
+  .navbar-item {
+    font-size: 10px;
+    margin: 0 5px;
+  }
+  .navbar-cart .bar span {
+    font-size: 10px;
+    padding: 2px 4px;
+  }
 }

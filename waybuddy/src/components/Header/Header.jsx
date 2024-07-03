@@ -9,8 +9,7 @@ const Header = () => {
             </div>
             <div className="navbar-container">
                 <div className="navbar-brand">
-                    <img src="https://i.imgur.com/Xv0aX0Q.png" alt="Logo" />
-                    <span>ACME</span>
+                    <img id='logo' src="https://i.postimg.cc/Jzv2tB8J/image.png" alt="Logo" />
                 </div>
                 <ul className="navbar-menu">
                     <li className="navbar-item">
@@ -20,7 +19,7 @@ const Header = () => {
                         <Link className="bar" to="/about">About</Link>
                     </li>
                     <li className="navbar-item">
-                        <Link className="bar" to="/navlink">nav link</Link>
+                        <Link className="bar" to="/navlink">Solutions</Link>
                     </li>
                     <li className="navbar-item">
                         <Link className="bar" to="/contribute">Contribute</Link>
