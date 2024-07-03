@@ -1,6 +1,7 @@
-import React from "react";
-import "./HomePage.css";
-import Header from "../../components/Header/Header";
+import React from 'react';
+import './HomePage.css';
+import Header from '../../components/Header/Header';
+import Footer from "../../components/Footer/footer";
 
 const HomePage = () => {
   return (
@@ -96,6 +97,7 @@ const HomePage = () => {
           Your browser does not support the video tag.
         </video>
       </section>
+      <Footer />
     </>
   );
 };
