@@ -1,0 +1,2 @@
+white :- #f9f9f9
+orange :- #eb5757
