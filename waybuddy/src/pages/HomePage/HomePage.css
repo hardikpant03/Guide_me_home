@@ -56,7 +56,7 @@
 /* Media Queries */
 
 /* For screens smaller than 1200px */
-@media (max-width: 1550px) {
+@media (max-width: 1200px) {
   .hero {
     min-height: 400px;
   }
@@ -68,11 +68,6 @@
   }
   .hero p {
     font-size: 25px;
-  }
-  .container {
-    margin-left: 140px;
-    margin-right: 140px;
-    margin-top: 30px;
   }
 }
 
@@ -90,11 +85,6 @@
   .hero p {
     font-size: 20px;
   }
-  .container {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 30px;
-  }
 }
 
 /* For screens smaller than 768px */
@@ -111,11 +101,6 @@
   .hero p {
     font-size: 15px;
   }
-  .container {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 30px;
-  }
 }
 
 /* For screens smaller than 480px */
@@ -131,11 +116,6 @@
   }
   .hero p {
     font-size: 12px;
-  }
-  .container {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 30px;
   }
 }
 
