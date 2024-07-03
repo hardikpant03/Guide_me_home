@@ -10,6 +10,7 @@ import Footer from './components/Footer/footer';
 const App = () => {
   return (
     <div>
+      <Router>
       <Router> 
         <Routes>
           <Route exact path="/" element={<Homepage />} />

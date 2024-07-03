@@ -29,10 +29,9 @@ body {
   text-decoration: none;
 }
 
-.nav-items .check:hover {
-  background-color: #b04b45;
-  border-radius: 2px;
-  padding: 5px 5px;
+.navbar-item {
+  font-size:21px;
+  margin: 0 30px;
 }
 
 .hamburger {
