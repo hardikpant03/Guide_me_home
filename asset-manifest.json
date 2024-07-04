@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Guide_me_home/tree/master/waybuddy/static/css/main.e636830b.chunk.css",
-    "main.js": "/Guide_me_home/tree/master/waybuddy/static/js/main.088319b9.chunk.js",
-    "main.js.map": "/Guide_me_home/tree/master/waybuddy/static/js/main.088319b9.chunk.js.map",
-    "runtime~main.js": "/Guide_me_home/tree/master/waybuddy/static/js/runtime~main.82432a33.js",
-    "runtime~main.js.map": "/Guide_me_home/tree/master/waybuddy/static/js/runtime~main.82432a33.js.map",
-    "static/js/2.70a63ed7.chunk.js": "/Guide_me_home/tree/master/waybuddy/static/js/2.70a63ed7.chunk.js",
-    "static/js/2.70a63ed7.chunk.js.map": "/Guide_me_home/tree/master/waybuddy/static/js/2.70a63ed7.chunk.js.map",
-    "index.html": "/Guide_me_home/tree/master/waybuddy/index.html",
-    "precache-manifest.d75095372e03a94dad51f5b3937ce934.js": "/Guide_me_home/tree/master/waybuddy/precache-manifest.d75095372e03a94dad51f5b3937ce934.js",
-    "service-worker.js": "/Guide_me_home/tree/master/waybuddy/service-worker.js",
-    "static/css/main.e636830b.chunk.css.map": "/Guide_me_home/tree/master/waybuddy/static/css/main.e636830b.chunk.css.map"
+    "main.css": "/Guide_me_home/static/css/main.e636830b.chunk.css",
+    "main.js": "/Guide_me_home/static/js/main.088319b9.chunk.js",
+    "main.js.map": "/Guide_me_home/static/js/main.088319b9.chunk.js.map",
+    "runtime~main.js": "/Guide_me_home/static/js/runtime~main.26b611ac.js",
+    "runtime~main.js.map": "/Guide_me_home/static/js/runtime~main.26b611ac.js.map",
+    "static/js/2.70a63ed7.chunk.js": "/Guide_me_home/static/js/2.70a63ed7.chunk.js",
+    "static/js/2.70a63ed7.chunk.js.map": "/Guide_me_home/static/js/2.70a63ed7.chunk.js.map",
+    "index.html": "/Guide_me_home/index.html",
+    "precache-manifest.da73266e6a7e7f72d32b7639e2ae0c15.js": "/Guide_me_home/precache-manifest.da73266e6a7e7f72d32b7639e2ae0c15.js",
+    "service-worker.js": "/Guide_me_home/service-worker.js",
+    "static/css/main.e636830b.chunk.css.map": "/Guide_me_home/static/css/main.e636830b.chunk.css.map"
   }
 }
