@@ -7,7 +7,7 @@ const contact = () => {
     return(
         <>
         <Header/>
-        <div className="container">
+        <div className="container1">
       <div className="contact-section">
         <div className="heading"><h1>Contact WayBuddy for Support</h1></div>
         <div className="contact-options">
