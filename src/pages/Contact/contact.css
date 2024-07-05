@@ -17,9 +17,11 @@
   font-weight: 600;
   text-align: center; 
   margin-bottom: 20px;
+  font-size: 38px;
+  font-style: sen;
+  font-weight: 700;
 }
 .contact-section {
-
   color: white;
   font-size: 20px;
   font-style: sen;
@@ -51,10 +53,18 @@
   margin-top: 20px;
 }
 
-.contact-block h2 {
+.other h2 {
   color: black;
+  font-size: 32px;
+  font-style: sen;
+  font-weight: 700;
 }
-
+.other p{
+  font-size: 16px;
+  font-style: sen;
+  font-weight: 400;
+  color:black;
+}
 .contact-button {
   background-color: #ff6f61;
   color: #ffffff;
@@ -62,9 +72,12 @@
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 4rem;
   max-width: 100%;
   box-sizing: border-box;
+  font-size: 16px;
+  font-style: sen;
+  font-weight: 700;
 }
 
 .contact-button:hover {
@@ -82,16 +95,35 @@
 .contact-info {
   max-width: 300px;
   margin: 20px;
+  font-size: 16px;
+  margin-bottom: 120px;
 }
 
 .contact-info h2 {
-  margin-bottom: 10px;
+  font-size: 32px;
+  font-style: sen;
+  font-weight: 700;
+  color: #333;
 }
 
 .contact-info p {
-  margin: 5px 0;
+  font-style: sen;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
 }
-
+.enq strong{
+  font-size: 16px;
+  font-style: sen;
+  font-weight: 700;
+  color: #333
+}
+.ppp{
+  font-size: 16px;
+  font-weight: 400;
+  font-style: sen;
+  color: #333; 
+}
 .contact-form {
   max-width: 500px;
   width: 100%;
@@ -100,6 +132,10 @@
 
 .contact-form h2 {
   margin-bottom: 10px;
+  font-size: 32px;
+  font-style: sen;
+  font-weight: 700;
+  color: #333;
 }
 
 .contact-form p {
@@ -128,16 +164,20 @@
 
 .contact-form button {
   background-color: #d3635a;
+  width: 25%;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   box-sizing: border-box;
+  font-size: 16px;
+  font-style: sen;
+  font-weight: 700;
 }
 
 .contact-form button:hover {
-  background-color: #b04b45;
+  background-color: #871610;
 }
 
 @media (max-width: 1000px) {
