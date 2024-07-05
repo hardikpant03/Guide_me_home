@@ -21,7 +21,7 @@ const System = () => {
   
   const DonationButton = ({ amount }) => {
     return (
-      <button className="donationButton" onClick={()=>{ alert("Add this feature after word ")}}>Donate {amount} Rupay</button>
+      <button className="donationButton" onClick={()=>{ alert("Add this feature after word ")}}>Donate {amount}Rupay</button>
     );
   };
   
